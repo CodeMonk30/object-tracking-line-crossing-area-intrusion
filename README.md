@@ -5,11 +5,6 @@ The line crossing check and area intrusion check are done by regular (meaning, n
 The latest version playbacks sound when an event such as crossing a line or entering to an area happens.  
 You can learn how to use line-crossing and area intrusion function from simple test program (`test-line-cross-area-intrusion.py`)  
 
-このプログラムはディープラーニングの物体検出モデルと特徴抽出(re-identification)モデルを用いて、ムービーフレーム中のオブジェクトを検出し、追跡するプログラムです。プログラムは見つけたオブジェクトの軌跡を記録し、オブジェクトが定義された仮想ラインを超えたり定義されたエリアに侵入したことを検出します。ディープラーニングの推論には[Intel(r) Distribution of OpenVINO(tm) toolkit](https://software.intel.com/en-us/openvino-toolkit)を利用しています。  
-オブジェクトの追跡のために、プログラムは特徴抽出モデルを使用して見つけたオブジェクトから256個の浮動小数点数値からなる特徴ベクトルを抽出します。この特徴ベクトル同士のL2ノルム(=距離)がオブジェクト同士の類似度を表します。このプログラムではノルムの計算にコサイン距離を使用しています。  
-ラインクロスとエリア侵入の判定には通常の(ディープラーニングベースではない)数学的アルゴリズムを使用しています。  
-最新版はラインクロスしたりエリア侵入したりなどのイベント発生時にオーディオを再生します。  
-コードを簡素化したテストプログラムも追加しました。ライン交差やエリア侵入判定関数の使い方などを学ぶことが可能です。(`test-line-cross-area-intrusion.py`)  
 
 [ Update - 04-Apr-2022 ] OpenVINO API 2.0 support. Program is now compatible with OpenVINO 2022.1 (and not compatible with OpenVINO 2021 and older ones)  
 
