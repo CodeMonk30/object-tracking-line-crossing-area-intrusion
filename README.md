@@ -9,8 +9,6 @@ You can learn how to use line-crossing and area intrusion function from simple t
 [ Update - 04-Apr-2022 ] OpenVINO API 2.0 support. Program is now compatible with OpenVINO 2022.1 (and not compatible with OpenVINO 2021 and older ones)  
 
 
-### Object Tracking and Line Crossing Demo
-![object-track](./resources/object-track.gif)
 
 
 ### Required DL Models to Run This Demo
